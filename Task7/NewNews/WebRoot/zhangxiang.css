@@ -1,0 +1,32 @@
+
+h1, p, li {
+	font-family: "Verdana", "Arial", "Helvetica", sans-serif;	
+	
+} //表示字体
+
+
+
+ul {
+	list-style-type: square	
+}
+
+ul ul {
+	list-style-type: disc	
+}
+
+ul ul ul {
+	list-style-type: circle	
+}
+
+.list1 {
+	color: #fa0aff
+}
+.list2 {
+	color: red
+}
+
+.person {
+	font-weight: bold;
+	font-style: italic;
+}
+
