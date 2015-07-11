@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>	
+  <welcome-file-list>
+    <welcome-file>Home.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addsort</servlet-name>
+    <servlet-class>com.NewNews.addsort</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SaveSelf</servlet-name>
+    <servlet-class>com.NewNews.SaveSelf</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowArticle</servlet-name>
+    <servlet-class>com.NewNews.ShowArticle</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteSort</servlet-name>
+    <servlet-class>com.NewNews.DeleteSort</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddLinks</servlet-name>
+    <servlet-class>com.NewNews.AddLinks</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SaveLogo</servlet-name>
+    <servlet-class>com.NewNews.SaveLogo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.NewNews.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteLinks</servlet-name>
+    <servlet-class>com.NewNews.DeleteLinks</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TestS</servlet-name>
+    <servlet-class>com.NewNews.TestS</servlet-class>
+  </servlet>
+
+  
+  
+  
+ <!--<filter>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <filter-name>FilterAll</filter-name>
+    <filter-class>com.NewNews.FilterAll</filter-class>
+  </filter>-->
+
+ <filter>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <filter-name>FilterAdmin</filter-name>
+    <filter-class>com.NewNews.FilterAdmin</filter-class>
+  </filter>  
+
+
+
+  <servlet-mapping>
+    <servlet-name>addsort</servlet-name>
+    <url-pattern>/servlet/addsort</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SaveSelf</servlet-name>
+    <url-pattern>/servlet/SaveSelf</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowArticle</servlet-name>
+    <url-pattern>/servlet/ShowArticle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteSort</servlet-name>
+    <url-pattern>/servlet/DeleteSort</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddLinks</servlet-name>
+    <url-pattern>/servlet/AddLinks</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SaveLogo</servlet-name>
+    <url-pattern>/servlet/SaveLogo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteLinks</servlet-name>
+    <url-pattern>/servlet/DeleteLinks</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TestS</servlet-name>
+    <url-pattern>/servlet/TestS</url-pattern>
+  </servlet-mapping>
+  <!-- <filter-mapping>
+    <filter-name>FilterAll</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping> -->
+  <filter-mapping>
+    <filter-name>FilterAdmin</filter-name>
+    <url-pattern>/admin/*</url-pattern>
+  </filter-mapping>
+</web-app>
